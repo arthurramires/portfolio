@@ -3,7 +3,6 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle,
 } from "./../components/ui/card";
 import {
   Tabs,
@@ -18,7 +17,7 @@ import { Skills } from "./Skills";
 export function TabsDemo() {
   return (
     <Tabs defaultValue="about" className="w-full">
-      <TabsList className="grid grid-cols-3 gap-2">
+      <TabsList className="grid grid-cols-3 gap-3">
         <TabsTrigger value="about" className="text-center w-full">About</TabsTrigger>
         <TabsTrigger value="experience" className="text-center w-full">Experience</TabsTrigger>
         <TabsTrigger value="skills" className="text-center w-full">Skills</TabsTrigger>

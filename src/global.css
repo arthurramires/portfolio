@@ -124,4 +124,71 @@
     margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1rem * var(--tw-space-y-reverse));
   }
+
+  .card {
+    background-color: #2b2b2b; /* Fundo cinza escuro */
+    color: #eaeaea; /* Texto claro */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra mais destacada */
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  .card-header {
+    margin-bottom: 16px;
+    border-radius: 8px;
+    padding: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .card-description {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #f0f0f0;
+  }
+  
+  .card-content {
+    font-size: 1rem;
+    color: #f0f0f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-footer {
+    margin-top: 16px;
+    padding-top: 8px;
+  }
+
+  .about-section {
+    padding: 16px;
+    color: #eaeaea;
+  }
+  
+  .about-section h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+  .about-section p {
+    margin-bottom: 16px;
+    color: #f0f0f0;
+  }
+  
+  .about-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 16px;
+  }
+  
+  .about-section li {
+    margin-bottom: 8px;
+    color: #f0f0f0;
+  }
 }

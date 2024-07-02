@@ -30,7 +30,7 @@ export function Header() {
           </a>
         </Button>
         <Button type='button' variant="link">
-          <a href="https://www.instagram.com/aarthurito/" target="_blank" rel="noopener noreferrer" className="text-primary">
+          <a href="mailto:arthurrnbueno@gmail.com" target="_blank" rel="noopener noreferrer" className="text-primary">
             <MailIcon />
           </a>
         </Button>

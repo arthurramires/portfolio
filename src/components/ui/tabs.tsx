@@ -11,7 +11,7 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "flex justify-around w-full border rounded-lg border-gray-700",
+      "flex justify-around w-full ",
       className
     )}
     {...props}
@@ -26,7 +26,7 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "flex-1 text-center py-2 text-sm font-medium rounded-lg transition-colors duration-200 ease-in-out border-2 border-transparent hover:border-purple-500 focus-visible:outline-none focus-visible:border-purple-500 data-[state=active]:border-purple-500 data-[state=active]:text-white",
+      "flex-1 text-center py-2 text-sm font-medium rounded-lg transition-colors bg-[#2b2b2b] duration-200 ease-in-out border-2 border-transparent hover:border-purple-500 focus-visible:outline-none focus-visible:border-purple-500 data-[state=active]:border-purple-500 data-[state=active]:text-white",
       className
     )}
     {...props}
