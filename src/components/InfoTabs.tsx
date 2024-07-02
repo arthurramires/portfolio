@@ -19,9 +19,9 @@ export function TabsDemo() {
   return (
     <Tabs defaultValue="about" className="w-full">
       <TabsList className="grid w-full grid-cols-3">
-        <TabsTrigger value="about">About</TabsTrigger>
-        <TabsTrigger value="experience">Experience</TabsTrigger>
-        <TabsTrigger value="skills">Skills</TabsTrigger>
+        <TabsTrigger value="about" className="text-center w-full">About</TabsTrigger>
+        <TabsTrigger value="experience" className="text-center w-full">Experience</TabsTrigger>
+        <TabsTrigger value="skills" className="text-center w-full">Skills</TabsTrigger>
       </TabsList>
       <TabsContent value="about">
         <Card>
