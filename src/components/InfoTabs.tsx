@@ -4,21 +4,21 @@ import {
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./../components/ui/card"
+} from "./../components/ui/card";
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "./../components/ui/tabs"
-import { About } from "./About"
-import { Experience } from "./Experience"
-import { Skills } from "./Skills"
+} from "./../components/ui/tabs";
+import { About } from "./About";
+import { Experience } from "./Experience";
+import { Skills } from "./Skills";
 
 export function TabsDemo() {
   return (
     <Tabs defaultValue="about" className="w-full">
-      <TabsList className="grid w-full grid-cols-3">
+      <TabsList className="grid grid-cols-3 gap-2">
         <TabsTrigger value="about" className="text-center w-full">About</TabsTrigger>
         <TabsTrigger value="experience" className="text-center w-full">Experience</TabsTrigger>
         <TabsTrigger value="skills" className="text-center w-full">Skills</TabsTrigger>
@@ -26,12 +26,11 @@ export function TabsDemo() {
       <TabsContent value="about">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-bold border-b-2 border-primary pb-2">About</CardTitle>
             <CardDescription>
               Some informations about the developer.
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-2 p-8 rounded-lg">
+          <CardContent>
             <About />
           </CardContent>
         </Card>
@@ -39,12 +38,11 @@ export function TabsDemo() {
       <TabsContent value="experience">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-bold border-b-2 border-primary pb-2">Experience</CardTitle>
             <CardDescription>
               A little resume about the experiences.
             </CardDescription>
           </CardHeader>
-          <CardContent className="">
+          <CardContent>
             <Experience />
           </CardContent>
         </Card>
@@ -52,16 +50,15 @@ export function TabsDemo() {
       <TabsContent value="skills">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl font-bold border-b-2 border-primary pb-2">Skills</CardTitle>
             <CardDescription>
               Some skills acquired over the course of the development period
             </CardDescription>
           </CardHeader>
-          <CardContent className="">
+          <CardContent>
             <Skills />
           </CardContent>
         </Card>
       </TabsContent>
     </Tabs>
-  )
+  );
 }

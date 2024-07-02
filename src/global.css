@@ -36,7 +36,45 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Classes personalizadas */
+  code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  footer {
+    background-color: #000;
+  }
+  
+  .card-content {
+    background-color: #2d2d2d;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  .card-header {
+    border-bottom: 2px solid #8000FF;
+    padding-bottom: 1rem;
+  }
+  
+  .tabs-trigger {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+  
+  .tabs-trigger.active {
+    border-bottom-color: #8000FF;
   }
 
   .bg-gray-800 {

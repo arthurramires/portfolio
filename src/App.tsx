@@ -1,15 +1,16 @@
 import { Header } from './components/Header';
+import { TabsDemo } from './components/InfoTabs';
 import './global.css';
 
 export function App() {
   return (
-    <div className="flex flex-col w-full min-h-screen mx-0 p-0 bg-black text-gray-200">
+    <div className="flex flex-col min-h-screen bg-black text-gray-200">
       <Header />
-      <div className="flex-grow flex flex-col justify-center items-center">
-        <div className="flex-grow">
-          {/* Conteúdo principal */}
+      <main className="flex-grow flex flex-col items-center justify-center w-full pt-64">
+        <div className="w-full max-w-5xl p-8 h-auto">
+          <TabsDemo />
         </div>
-      </div>
+      </main>
       <footer className="w-full flex justify-center items-center py-4 bg-black">
         <h2>by 🧡 <code>&lt;Arthur Ramires /&gt;</code></h2>
       </footer>

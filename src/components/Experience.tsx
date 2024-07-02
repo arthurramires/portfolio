@@ -1,6 +1,6 @@
 export function Experience() {
   return (
-    <div className="p-4 bg-gray-700 rounded-lg">
+    <div className="p-4 rounded-lg">
       <div className="job">
         <h3 className="text-xl font-semibold">Backend Software Engineer – Before IT</h3>
         <span className="text-sm text-gray-400">Jul 2022 - Current</span>
