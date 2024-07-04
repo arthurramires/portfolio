@@ -1,21 +1,29 @@
-name: Build and Deploy
-on: [push]
-permissions:
-  contents: write
+name: Node.js CI
+on:
+  push:
+    branches: [ main ]
 jobs:
-  build-and-deploy:
-    concurrency: ci-${{ github.ref }}
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v4
+  build:
 
-      - name: Install and Build 🔧
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Build
         run: |
           npm ci
           npm run build
+          npm run export
+          touch out/.nojekyll
 
-      - name: Deploy 🚀
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: main
           folder: out
