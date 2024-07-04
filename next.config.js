@@ -2,7 +2,7 @@
 
 module.exports = {
   assetPrefix: '/porfolio',
-  basePath: '',
+  basePath: '/porfolio',
   output: "export",
   images: {
     loader: 'imgix',
